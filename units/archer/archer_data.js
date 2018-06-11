@@ -1,0 +1,40 @@
+window.game.unitData["archer"] = {
+	hp:30,
+	regen:0,
+	spMultiplier:1,
+	meleePower:1,
+	rangedPower:3,
+	physicalPower:4,
+	magicPower:0,
+	pierce:3,
+	drain:0,
+	meleeDefense:1,
+	rangedDefense:6,
+	physicalDefense:2,
+	magicDefense:1,
+	spikes:0,
+	speed:4,
+	force:5,
+	weight:5,
+	intelligence:0,
+	actions:["dodge", "rush"],
+	actionChances:[50, 50],
+	attackType:"physical",
+	rangedAttack:true,
+	rangedAttackRate:150,
+	rangedActions:["arrow"],
+	rangedActionChances:[100],
+	wrecker:false,
+	raider:false,
+	defender:false,
+	initiative:false,
+	superType:"ranged",
+	superLength:5,
+	superData:function(user){
+		user.spMultiplier = 0;
+		user.rangedPower = 20;
+		user.rangedAttackRate = 100;
+	},
+	restricted:false,
+	restrictedToUsers:[]
+};

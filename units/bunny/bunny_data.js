@@ -1,0 +1,40 @@
+window.game.unitData["bunny"] = {
+	hp:30,
+	regen:0,
+	spMultiplier:1,
+	meleePower:1,
+	rangedPower:4,
+	physicalPower:4,
+	magicPower:0,
+	pierce:1,
+	drain:0,
+	meleeDefense:1,
+	rangedDefense:5,
+	physicalDefense:1,
+	magicDefense:3,
+	spikes:0,
+	speed:7,
+	force:10,
+	weight:5,
+	intelligence:0,
+	actions:["attack", "dodge", "rush"],
+	actionChances:[25, 40, 35],
+	attackType:"physical",
+	rangedAttack:true,
+	rangedAttackRate:100,
+	rangedActions:["bullet"],
+	rangedActionChances:[100],
+	wrecker:false,
+	raider:false,
+	defender:false,
+	initiative:false,
+	superType:"ranged",
+	superLength:20,
+	superData:function(user){
+		user.spMultiplier = 0;
+		user.rangedAttackRate = 5;
+		user.speed -= 3;
+	},
+	restricted:false,
+	restrictedToUsers:[]
+};

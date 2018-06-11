@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Stream Fighters</title>
+	<script id="streamfighters" src="streamfighters.js"></script>
+	<script src="variables.js"></script>
+</head>
+<body>
+    
+	<canvas id="game" height="200" width="600" style="width:1800px; height:600px; image-rendering: pixelated;" onclick="game.checkStatus();"></canvas>
+	<canvas id="unitCanvas" height="200" width="600" style="width:1800px; height:600px; image-rendering: pixelated; visibility: hidden;">
+
+	<img id="healthBar" src="health_bar.png" style="visibility: hidden;">
+	<img id="castleRedFront" src="castle_red_front2.png" style="visibility: hidden;">
+	<img id="castleRedBack" src="castle_red_back2.png" style="visibility: hidden;">
+	<img id="castleBlueFront" src="castle_blue_front2.png" style="visibility: hidden;">
+	<img id="castleBlueBack" src="castle_blue_back2.png" style="visibility: hidden;">
+	<img id="castleTower" src="castle_both_tower.png" style="visibility: hidden;">
+	<img id="speechBubble" src="speech_bubble.png" style="visibility: hidden;">
+	<img id="streamFighters" src="streamfighters_logo_2.png" style="visibility: hidden;">
+	<img id="ground" src="ground.png" style="visibility: hidden;">
+	<img id="joinTeam" src="join_a_team_2.png" style="visibility: hidden;">
+	<img id="joinRed" src="joinred_2.png" style="visibility: hidden;">
+	<img id="joinBlue" src="joinblue_2.png" style="visibility: hidden;">
+	<img id="redWin" src="red_win_3.png" style="visibility: hidden;">
+	<img id="blueWin" src="blue_win_3.png" style="visibility: hidden;">
+	<img id="ready" src="ready_2.png" style="visibility: hidden;">
+	<img id="set" src="set_2.png" style="visibility: hidden;">
+	<img id="fight" src="fight_2.png" style="visibility: hidden;">
+	<img id="hit1" src="hit_particle_1.png" style="visibility: hidden;">
+	<img id="hit2" src="hit_particle_2.png" style="visibility: hidden;">
+	<img id="hit3" src="hit_particle_3.png" style="visibility: hidden;">
+	<img id="hit4" src="hit_particle_4.png" style="visibility: hidden;">
+	<img id="smalldust1" src="dust_particle1.png" style="visibility: hidden;">
+	<img id="smalldust2" src="dust_particle2.png" style="visibility: hidden;">
+	<img id="smalldust3" src="dust_particle3.png" style="visibility: hidden;">
+	<img id="dust1" src="dustcloud_1.png" style="visibility: hidden;">
+	<img id="dust2" src="dustcloud_2.png" style="visibility: hidden;">
+	<img id="dust3" src="dustcloud_3.png" style="visibility: hidden;">
+	<img id="red_block_chunk1" src="red_block_chunk1.png" style="visibility: hidden;">
+	<img id="red_block_chunk2" src="red_block_chunk2.png" style="visibility: hidden;">
+	<img id="blue_block_chunk1" src="blue_block_chunk1.png" style="visibility: hidden;">
+	<img id="blue_block_chunk2" src="blue_block_chunk2.png" style="visibility: hidden;">
+	
+    <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		window.chatClient.open();
+		window.botClient.open();
+		startGame();
+    });
+    </script>
+	<script src="secrets.js"></script>
+</body>
+</html>
